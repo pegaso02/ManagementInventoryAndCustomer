@@ -1,6 +1,7 @@
 
 package Service;
 import Controller.ConexionBd;
+import Vista.Dashboard;
 import Vista.Login;
 import Vista.Register;
 import java.security.MessageDigest;
@@ -14,6 +15,15 @@ import java.sql.ResultSet;
 public class UserService {
     
     Boolean registro = false;
+    Boolean login = false;
+
+    public Boolean getLogin() {
+        return login;
+    }
+
+    public void setLogin(Boolean login) {
+        this.login = login;
+    }
 
     public Boolean getRegistro() {
         return registro;
@@ -134,6 +144,8 @@ public class UserService {
                     if(passDb.equals(passEncr)){
 
                         System.out.println("Login Exitoso!!");
+                        login = true;
+                        
                         
                     // vista de inicio
 
