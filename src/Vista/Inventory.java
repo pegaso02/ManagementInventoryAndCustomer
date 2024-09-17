@@ -19,6 +19,7 @@ public class Inventory extends javax.swing.JFrame {
     public Inventory() {
         initComponents(); // Inicializa los componentes generados por NetBeans
         setTitle("Inventory");
+        setLocationRelativeTo(null);
         
         // Definir las columnas para la tabla
         String[] ColumnsTable = {"ProductId", "ProductName", "Price", "Qty"};

@@ -5,12 +5,13 @@
         <group>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Service/UserService.java</file>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Dashboard.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Product.java</file>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Model/Product.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Login.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Register.java</file>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Inventory.java</file>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Model/Users.java</file>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Service/ProductService.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Service/CustomerService.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Customer.java</file>
         </group>
     </open-files>
 </project-private>

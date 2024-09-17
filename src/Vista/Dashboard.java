@@ -26,7 +26,7 @@ public class Dashboard extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jButton11 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        jBtnCustomer = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jLabelShowUser = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -80,8 +80,13 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel4.add(jButton11);
 
-        jButton10.setText("Nuevo Cliente");
-        jPanel4.add(jButton10);
+        jBtnCustomer.setText("Nuevo Cliente");
+        jBtnCustomer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnCustomerActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jBtnCustomer);
 
         jButton12.setText("Crear Pedido");
         jPanel4.add(jButton12);
@@ -140,11 +145,16 @@ public class Dashboard extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnInventoryActionPerformed
 
+    private void jBtnCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCustomerActionPerformed
+        Customer customer = new Customer();
+        customer.setVisible(true);
+    }//GEN-LAST:event_jBtnCustomerActionPerformed
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnInventory;
-    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jBtnCustomer;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton4;
