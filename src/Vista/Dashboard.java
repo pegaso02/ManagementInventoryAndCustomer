@@ -1,6 +1,7 @@
 
 package Vista;
 
+import Service.UserService;
 import java.util.HashSet;
 
 
@@ -25,16 +26,15 @@ public class Dashboard extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        jButton11 = new javax.swing.JButton();
-        jBtnCustomer = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jLabelShowUser = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(700, 700));
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
@@ -54,9 +54,19 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel3.add(btnInventory);
 
         jButton6.setText("Clientes");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton6);
 
         jButton7.setText("Facturacion");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton7);
 
         jButton8.setText("Reportes");
@@ -72,23 +82,28 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 450, 40));
 
-        jButton11.setText("Nuevo Producto");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("Management Product");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton11);
+        jPanel4.add(jButton1);
 
-        jBtnCustomer.setText("Nuevo Cliente");
-        jBtnCustomer.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setText("Management Client");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnCustomerActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
-        jPanel4.add(jBtnCustomer);
+        jPanel4.add(jButton2);
 
         jButton12.setText("Crear Pedido");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton12);
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 460, 40));
@@ -124,11 +139,7 @@ public class Dashboard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        Product product = new Product();
-        product.setVisible(true);
-    }//GEN-LAST:event_jButton11ActionPerformed
-
+    UserService userService = new UserService();
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        this.dispose();
        Login login = new Login();
@@ -145,18 +156,42 @@ public class Dashboard extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnInventoryActionPerformed
 
-    private void jBtnCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCustomerActionPerformed
-        Customer customer = new Customer();
-        customer.setVisible(true);
-    }//GEN-LAST:event_jBtnCustomerActionPerformed
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        Order order = new Order();
+        order.setVisible(true);
+        
+        
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        ViewCustomer viewCustomer = new ViewCustomer();
+        viewCustomer.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        billingReport br = new billingReport(); 
+        br.setVisible(true);
+        br.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ProductManagement pm = new ProductManagement();
+        pm.setVisible(true);
+        pm.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        ManagementCustomer mc = new ManagementCustomer();
+        mc.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnInventory;
-    private javax.swing.JButton jBtnCustomer;
-    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;

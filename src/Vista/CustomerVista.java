@@ -2,12 +2,13 @@
 package Vista;
 
 import Service.CustomerService;
+import java.util.HashSet;
 
 
-public class Customer extends javax.swing.JFrame {
+public class CustomerVista extends javax.swing.JFrame {
 
 
-    public Customer() {
+    public CustomerVista() {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("New Customer");
@@ -28,7 +29,7 @@ public class Customer extends javax.swing.JFrame {
         jTfNit = new javax.swing.JTextField();
         jBnSave = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("New Customer");
@@ -101,12 +102,25 @@ public class Customer extends javax.swing.JFrame {
 
     private void jBnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBnSaveActionPerformed
         
+        try {
         String name = jTfName.getText();
         String maill = jTfMail.getText();
-        Double nit = Double.parseDouble(jTfNit.getText());
+        String nit = jTfNit.getText();
         
         CustomerService customer = new CustomerService();
         customer.createCustomer(name, maill, nit);
+        
+        
+        } catch (Exception e) {
+            System.out.println("Los datos no se recuperaron del text field");
+        }
+        
+        jTfMail.setText("");
+        jTfName.setText("");
+        jTfNit.setText("");
+        
+        
+        
         
     }//GEN-LAST:event_jBnSaveActionPerformed
 
