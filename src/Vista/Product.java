@@ -2,14 +2,18 @@
 package Vista;
 
 import Service.ProductService;
+import java.math.BigDecimal;
 import javax.swing.JTextField;
 
 
 public class Product extends javax.swing.JFrame {
+    
+    BigDecimal value;
 
 
     public Product() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
 
@@ -130,12 +134,28 @@ public class Product extends javax.swing.JFrame {
     private void jBtnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSaveActionPerformed
         ProductService ps = new ProductService();
         
+        try {
+            
         String productName =jTfProductName.getText();
-        Double price = Double.parseDouble(jTfPrice.getText());
+        String valor = jTfPrice.getText();
+        value = new BigDecimal(valor);
+        
         int qty = Integer.parseInt(jTfQuantity.getText());
         
+         ps.newProduct(productName, value,qty);
+         
+         if(ps.getBandera()){  // Si se creo el producto vaciamos las cajas de texto
+            jTfProductName.setText("");
+            jTfQuantity.setText("");
+            jTfPrice.setText("");
+         }
+         
+        } catch (Exception e) {
+            System.out.println("Error "+e);
+        }
         
-        ps.newProduct(productName, price,qty);
+        
+       
         
     }//GEN-LAST:event_jBtnSaveActionPerformed
 

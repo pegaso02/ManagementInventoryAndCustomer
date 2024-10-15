@@ -4,6 +4,7 @@ package Vista;
 import Service.UserService;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import javax.swing.JOptionPane;
 
 
 public class Register extends javax.swing.JFrame {
@@ -40,7 +41,7 @@ public class Register extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         jButton2.setText("Logueate");
@@ -210,15 +211,18 @@ public class Register extends javax.swing.JFrame {
         String passEncryp =convertirSHA256(password);
         String fullName=jTextFieldFullName.getText();
         String email =jTextFieldEmail.getText();    
-        int role;
+        int role = 0;
         
         if(jRadioButtonAdmin.isSelected()){
             role=1;
         } else if (jRadioButtonUser.isSelected()){
             role=2;
-        } else{
+        } else if(userName == null || userName.isEmpty() || 
+                passEncryp == null || passEncryp.isEmpty()    || 
+                fullName == null || fullName.isEmpty() ||
+                email.isEmpty()   ||  email == null ){
           
-            throw new IllegalArgumentException("Los campos no pueden estar vacíos");
+            JOptionPane.showMessageDialog(null, "Los campos no pueden estar vacíos");
         }
         
         UserService userService = new UserService();

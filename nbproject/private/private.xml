@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Service/UserService.java</file>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Dashboard.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Model/Product.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Register.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Inventory.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Model/Users.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/editCustomer.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/deleteCustomer.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Controller/CustomerController.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Model/CustomerModel.java</file>
             <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Service/ProductService.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Service/CustomerService.java</file>
-            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/Customer.java</file>
+            <file>file:/C:/Users/PC/OneDrive/Documentos/NetBeansProjects/ManagementInventoryCustomer/ManagementInventoryAndCustomer/src/Vista/ManagementCustomer.java</file>
         </group>
     </open-files>
 </project-private>

@@ -14,8 +14,19 @@ import java.sql.ResultSet;
 
 public class UserService {
     
+    static Boolean administrador = false;
     Boolean registro = false;
     Boolean login = false;
+
+    public Boolean getAdministrador() {
+        return administrador;
+    }
+
+    public void setAdministrador(Boolean administrador) {
+        this.administrador = administrador;
+    }
+    
+    
 
     public Boolean getLogin() {
         return login;
@@ -66,7 +77,7 @@ public class UserService {
             
         {
             
-             // Asegúrate de validar que los valores no sean nulos ni vacíos
+             // Validar que los valores no sean nulos ni vacíos
         if (userName == null || userName.trim().isEmpty() ||
             password == null || password.trim().isEmpty() ||
             fullName == null || fullName.trim().isEmpty() ||
@@ -85,7 +96,9 @@ public class UserService {
            if(row > 0){
                System.out.println("Registrado exitosamente!!");
                registro=true;
-           
+               if(role == 1){
+                   this.administrador = true;
+               }
            }
            
             
@@ -136,6 +149,8 @@ public class UserService {
 
                     // Obteniendo la contraseña de la bd
                    String passDb= rs.getString("Password");
+                   int role = rs.getInt("RoleId");
+                   
 
                    // Encriptando la contraseña recibida por parametro
                     String passEncr=convertirSHA256(Pass);
@@ -145,6 +160,11 @@ public class UserService {
 
                         System.out.println("Login Exitoso!!");
                         login = true;
+                        
+                        if(role == 1){
+                            this.administrador = true;
+                        } 
+                        
                         
                         
                     // vista de inicio

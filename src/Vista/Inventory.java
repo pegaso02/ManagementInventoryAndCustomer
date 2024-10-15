@@ -15,6 +15,16 @@ public class Inventory extends javax.swing.JFrame {
     
     DefaultTableModel tableModel;
 
+    public JTable getjTable1() {
+        return jTable1;
+    }
+
+    public void setjTable1(JTable jTable1) {
+        this.jTable1 = jTable1;
+    }
+    
+    
+
  
     public Inventory() {
         initComponents(); // Inicializa los componentes generados por NetBeans
