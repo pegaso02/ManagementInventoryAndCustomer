@@ -17,7 +17,11 @@ public class ReportService {
           List<Object[]> columnasArray = new ArrayList<>();
         
         String query = "SELECT Invoice.InvoiceId, Invoice.Date,Customer.Name, Customer.CustomerId, InvoiceProduct.ProductName,InvoiceProduct.Quantity, Invoice.Total\n" +
+<<<<<<< HEAD
                                 "from Customer left join Invoice on Customer.CustomerId = Invoice.CustomerId left join InvoiceProduct on Invoice.InvoiceId = InvoiceProduct.InvoiceId";
+=======
+                                "from Customer left join Invoice on Customer.CustomerId = Invoice.CustomerId left join InvoiceProduct on Invoice.InvoiceId = InvoiceProduct.InvoiceId ORDER BY Invoice.InvoiceId ASC";
+>>>>>>> funcionalidad-impresion
                 
                 
         try(Connection con = ConexionBd.getConnection();

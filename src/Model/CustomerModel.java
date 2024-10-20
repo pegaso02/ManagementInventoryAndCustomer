@@ -68,7 +68,28 @@ public class CustomerModel {
         this.Nit = Nit;
     }
     
+<<<<<<< HEAD
     
+=======
+    public String getCustomerById(int customerId){
+        String query = "Select Name from Customer where CustomerId = ?";
+        String customerName ="";
+        try (Connection con = ConexionBd.getConnection();
+            PreparedStatement ps = con.prepareStatement(query);){
+            
+            ps.setInt(1, customerId);
+            
+            ResultSet rs = ps.executeQuery();
+            
+            while (rs.next()) {                
+                customerName = rs.getString(1);
+            }
+            
+        } catch (Exception e) {
+        }
+        return customerName;
+    }
+>>>>>>> funcionalidad-impresion
     
     public List<CustomerModel> getAllCustomer(){
         

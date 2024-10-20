@@ -3,7 +3,11 @@ package Service;
 
 import Controller.ConexionBd;
 import Model.orderItems;
+<<<<<<< HEAD
 import com.mysql.cj.jdbc.StatementImpl;
+=======
+
+>>>>>>> funcionalidad-impresion
 
 import java.util.ArrayList;
 import java.sql.Connection;
@@ -11,6 +15,10 @@ import java.sql.PreparedStatement;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.sql.ResultSet;
+<<<<<<< HEAD
+=======
+import java.sql.Statement;
+>>>>>>> funcionalidad-impresion
 import javax.swing.JOptionPane;
 
 
@@ -50,7 +58,11 @@ public class invoiceService {
         
         // LOGICA PARA ALMACENAR INFORMACION EN LA TABLA INVOICE
         try( Connection con = ConexionBd.getConnection();
+<<<<<<< HEAD
               PreparedStatement ps = con.prepareStatement(query, StatementImpl.RETURN_GENERATED_KEYS);
+=======
+              PreparedStatement ps = con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+>>>>>>> funcionalidad-impresion
                 ) {
             
             ps.setDate(1, fechasql);

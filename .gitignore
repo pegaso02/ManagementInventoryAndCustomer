@@ -1,1 +1,11 @@
 /dist/
+
+# Ignorar la carpeta build donde se generan archivos compilados
+build/
+
+# Ignorar archivos de clases compiladas de Java
+*.class
+
+# Ignorar logs o archivos temporales
+*.log
+.DS_Store

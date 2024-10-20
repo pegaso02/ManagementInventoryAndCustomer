@@ -5,6 +5,11 @@ import Controller.ConexionBd;
 import Model.orderItems;
 import Service.invoiceService;
 import java.awt.List;
+<<<<<<< HEAD
+=======
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
+>>>>>>> funcionalidad-impresion
 import java.math.BigDecimal;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
@@ -49,6 +54,11 @@ public class Order extends javax.swing.JFrame {
         jTableCarrito.setModel(defaultTableModelCarrito);
     }
     
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> funcionalidad-impresion
     
     public void loadData(){
         
@@ -97,6 +107,10 @@ public class Order extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jBtnCreateOrder = new javax.swing.JButton();
+<<<<<<< HEAD
+=======
+        Imprimir = new javax.swing.JButton();
+>>>>>>> funcionalidad-impresion
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -153,6 +167,16 @@ public class Order extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+=======
+        Imprimir.setText("Imprimir");
+        Imprimir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImprimirActionPerformed(evt);
+            }
+        });
+
+>>>>>>> funcionalidad-impresion
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -171,12 +195,26 @@ public class Order extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jBtnAddCart))
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBtnCreateOrder))))
                 .addContainerGap(65, Short.MAX_VALUE))
+=======
+                        .addGap(72, 72, 72)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(65, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBtnCreateOrder)
+                .addGap(47, 47, 47)
+                .addComponent(Imprimir)
+                .addGap(277, 277, 277))
+>>>>>>> funcionalidad-impresion
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,9 +237,17 @@ public class Order extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(368, 368, 368)
                         .addComponent(jBtnAddCart)))
+<<<<<<< HEAD
                 .addGap(30, 30, 30)
                 .addComponent(jBtnCreateOrder)
                 .addContainerGap(384, Short.MAX_VALUE))
+=======
+                .addGap(33, 33, 33)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnCreateOrder)
+                    .addComponent(Imprimir))
+                .addContainerGap(381, Short.MAX_VALUE))
+>>>>>>> funcionalidad-impresion
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -210,7 +256,11 @@ public class Order extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addGap(0, 12, Short.MAX_VALUE))
+=======
+                .addGap(0, 0, Short.MAX_VALUE))
+>>>>>>> funcionalidad-impresion
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,11 +288,25 @@ public class Order extends javax.swing.JFrame {
         
        
     }//GEN-LAST:event_jBtnAddCartActionPerformed
+<<<<<<< HEAD
 
     // BOTON CREAR FACTURA
     private void jBtnCreateOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCreateOrderActionPerformed
         
         String customerId = jTfCustomerId.getText();
+=======
+    
+     String customerId ;
+     
+     public String getcustomerId(){
+         return this.customerId;
+     }
+     
+    // BOTON CREAR FACTURA
+    private void jBtnCreateOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCreateOrderActionPerformed
+        
+        customerId = jTfCustomerId.getText();
+>>>>>>> funcionalidad-impresion
 
         
         // Validar si el cliente existe en base de datos, para hacer el pedido
@@ -383,6 +447,30 @@ public class Order extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jBtnCreateOrderActionPerformed
 
+<<<<<<< HEAD
+=======
+    private void ImprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImprimirActionPerformed
+        FormatPrinter formatPrinter = new  FormatPrinter(this);
+       
+       
+        try {
+            PrinterJob printer = PrinterJob.getPrinterJob();
+            printer.setPrintable(formatPrinter);
+            
+            boolean cuadroDialogoImprimir = printer.printDialog(); // SI se da en el boton imprimir da verdadero, si cancel falso
+            
+            if(cuadroDialogoImprimir){
+                printer.print();
+            }
+            
+            
+        } catch (PrinterException e) {
+            JOptionPane.showMessageDialog(null, "error desde metodo Imprimir en order clase"+e);
+        }
+        
+    }//GEN-LAST:event_ImprimirActionPerformed
+
+>>>>>>> funcionalidad-impresion
 
     
         public double  calcularTotal(){
@@ -504,6 +592,10 @@ public class Order extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
+=======
+    private javax.swing.JButton Imprimir;
+>>>>>>> funcionalidad-impresion
     private javax.swing.JButton jBtnAddCart;
     private javax.swing.JButton jBtnCreateOrder;
     private javax.swing.JLabel jLabel1;
