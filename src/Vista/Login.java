@@ -59,7 +59,7 @@ public class Login extends javax.swing.JFrame {
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Bradley Hand ITC", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("SU SOLUCION EN ARTES GRAFICAS");
+        jLabel6.setText("SU SOLUCIÓN EN ARTES GRÁFICAS");
 
         jLabel8.setFont(new java.awt.Font("Bradley Hand ITC", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
