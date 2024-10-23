@@ -35,7 +35,6 @@ public class CustomerVista extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 700));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -93,7 +92,7 @@ public class CustomerVista extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 51, 153));
         jPanel1.setPreferredSize(new java.awt.Dimension(400, 700));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pc\\Desktop\\Felipe\\Tipografia\\Logo Gironza final.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Logo Gironza final.png"))); // NOI18N
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Bradley Hand ITC", 1, 18)); // NOI18N
@@ -120,7 +119,7 @@ public class CustomerVista extends javax.swing.JFrame {
                                 .addComponent(jLabel8)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 40, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel6)))
                 .addContainerGap())
         );
@@ -138,7 +137,7 @@ public class CustomerVista extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 702));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pc\\Desktop\\Felipe\\SENA\\Inventary Project\\ManagementInventoryAndCustomer\\src\\icon\\icon user.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icon user.png"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 16, -1, -1));
 
         pack();

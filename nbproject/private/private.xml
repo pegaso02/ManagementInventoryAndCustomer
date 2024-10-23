@@ -3,9 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/Inventory.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/Register.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/managementinventorycustomer/ManagementInventoryCustomer.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/CustomerVista.java</file>
             <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/billingReport.java</file>
-            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/ViewCustomer.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/ProductManagement.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/deleteCustomer.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/editCustomer1.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/Product.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/ManagementCustomer.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/editCustomer.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/Inventory.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/Order.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/Login.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/Dashboard.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/EditProduct.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/updateProduct.java</file>
+            <file>file:/C:/Users/Pc/Desktop/Felipe/SENA/Inventary%20Project/ManagementInventoryAndCustomer/src/Vista/deleteProduct.java</file>
         </group>
     </open-files>
 </project-private>

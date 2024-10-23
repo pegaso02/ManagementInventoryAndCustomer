@@ -88,7 +88,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        jLabelShowUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pc\\Desktop\\Felipe\\Tipografia\\Aplicación Inventario\\icons dashboard.png")); // NOI18N
+        jLabelShowUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons dashboard.png"))); // NOI18N
         jLabelShowUser.setText("jLabel1");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -163,7 +163,7 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 550, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Pc\\Desktop\\Felipe\\Tipografia\\Aplicación Inventario\\iconos dashboard.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconos dashboard.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));

@@ -185,7 +185,7 @@
             <Component class="javax.swing.JLabel" name="jLabelShowUser">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Pc\Desktop\Felipe\Tipografia\Aplicaci&#xf3;n Inventario\icons dashboard.png"/>
+                  <Image iconType="3" name="/icon/icons dashboard.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
@@ -261,7 +261,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Pc\Desktop\Felipe\Tipografia\Aplicaci&#xf3;n Inventario\iconos dashboard.png"/>
+              <Image iconType="3" name="/icon/iconos dashboard.png"/>
             </Property>
           </Properties>
           <Constraints>
